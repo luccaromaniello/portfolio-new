@@ -1,0 +1,48 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { TOP_NAV_HEIGHT } from "@constants";
+---
+
+<header>
+  <nav>
+    <a href="/">Lucca Romaniello</a>
+    <div>
+      <HeaderLink href="/">Work</HeaderLink>
+    </div>
+  </nav>
+</header>
+<style define:vars={{TOP_NAV_HEIGHT}}>
+  header {
+    margin: 0;
+    padding: 0 1em;
+    background: red;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: var(--TOP_NAV_HEIGHT);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--accent);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+  }
+</style>
