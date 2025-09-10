@@ -1,9 +1,12 @@
 ---
-const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Your name here. All rights reserved.
+  <p>contact@romaniello.dev</p>
+  <div class="copy">
+    <p>Designed and coded by Lucca Romaniello.</p>
+    <p>Last updated September 2025.</p>
+  </div>
 	<div class="social-links">
 		<a href="https://m.webtoo.ls/@astro" target="_blank">
 			<span class="sr-only">Follow Astro on Mastodon</span>
@@ -59,4 +62,12 @@ const today = new Date();
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
 	}
+  .copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .copy p {
+    margin: 0;
+  }
 </style>
