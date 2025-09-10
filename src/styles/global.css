@@ -4,11 +4,15 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@import url("typography.css");
+
 :root {
   --black: #020307;
   --white: #FFFFFF;
+  --light-white: #FFEAF2;
   --gray-secondary: #6F6F6F;
 }
+
 @font-face {
 	font-family: "Satoshi";
 	src: url("/fonts/Satoshi-Variable.woff2") format("woff2");
@@ -19,54 +23,11 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-  background-color: var(--black);
+  background-color: var(--light-white);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.7;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
-}
-h1 {
-	font-size: 3.052em;
-}
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
-	font-weight: 700;
-}
-a {
-	color: var(--accent);
-}
-a:hover {
-	color: var(--accent);
-}
-p {
-	margin-bottom: 1em;
-  color: var(--gray-secondary);
-}
-.prose p {
-	margin-bottom: 2em;
 }
 textarea {
 	width: 100%;
