@@ -1,7 +1,29 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 @import "tailwindcss";
+
+@font-face {
+  font-family: Satoshi;
+  font-display: optional;
+  src: url("fonts/Satoshi-Variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-display: optional;
+  src: url("fonts/PlayfairDisplay-Variable.woff") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display Italic";
+  font-display: optional;
+  src: url("fonts/PlayfairDisplay-Italic-Variable.woff2") format("woff2");
+}
+
+@theme {
+  --font-playfair: "Playfair Display", sans;
+  --font-playfair-italic: "Playfair Display Italic", sans;
+  --font-satoshi: "Satoshi", sans-serif;
+}
+
+body {
+  /* font-family: Satoshi, sans-serif; */
+}
