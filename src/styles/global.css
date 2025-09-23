@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --text-secondary: hsl(0, 0%, 43.53%);
+}
+
 @font-face {
   font-family: Satoshi;
   font-display: optional;
@@ -22,6 +26,7 @@
   --font-playfair: "Playfair Display", sans;
   --font-playfair-italic: "Playfair Display Italic", sans;
   --font-satoshi: "Satoshi", sans-serif;
+  --color-content-secondary: var(--text-secondary);
 }
 
 body {
